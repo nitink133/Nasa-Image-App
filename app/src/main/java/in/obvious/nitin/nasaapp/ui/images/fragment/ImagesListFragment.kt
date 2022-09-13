@@ -34,16 +34,9 @@ class ImagesListFragment : BaseFragment<FragmentImagesListBinding, ImageListView
 
     private val mAdapterSelectionCallback: ((position: Int) -> Unit) =
         let@{
+            // NotificationUtils.vibrate(context)
             findNavController().navigate(ImagesListFragmentDirections.moveToImageDetail(it))
         }
-
-    override fun showProgress(msg: String?) {
-        //ignore
-    }
-
-    override fun hideProgress() {
-        //ignore
-    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

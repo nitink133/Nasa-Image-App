@@ -40,14 +40,6 @@ class ImageDetailFragment : BaseFragment<FragmentImageDetailBinding, ImageDetail
             FragmentImageDetailBinding.inflate(layoutInflater, viewGroup, b)
         }
 
-    override fun showProgress(msg: String?) {
-        //ignore
-    }
-
-    override fun hideProgress() {
-        //ignore
-    }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 

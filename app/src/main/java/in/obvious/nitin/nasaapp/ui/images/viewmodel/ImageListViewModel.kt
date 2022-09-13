@@ -18,11 +18,12 @@ abstract class ImageListViewModel : BaseViewModel() {
 class ImageListViewModelImpl @Inject constructor(
     private val getImagesUseCase: GetImagesUseCase
 ) : ImageListViewModel() {
-    override val imagesList: MutableLiveData<List<NasaImage>> = MutableLiveData()
+    override val imagesList: MutableLiveData<List<NasaImage>> = MutableLiveData(emptyList())
 
     init {
         launch {
             imagesList.value = getImagesUseCase.getImages()
         }
     }
+
 }

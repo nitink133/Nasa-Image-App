@@ -47,9 +47,6 @@ abstract class BaseFragment<VB : ViewBinding, VM : BaseViewModel> : Fragment() {
 
     lateinit var viewModel: VM
 
-    abstract fun showProgress(msg: String?)
-    abstract fun hideProgress()
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
