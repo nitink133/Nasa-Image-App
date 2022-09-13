@@ -32,13 +32,9 @@ class ImagesListFragment : BaseFragment<FragmentImagesListBinding, ImageListView
         )
     }
 
-    private val mAdapterSelectionCallback: ((imageView: View, position: Int, transitionId: String) -> Unit) =
-        let@{ imageView, position, transitionId ->
-            val direction = ImagesListFragmentDirections.moveToImageDetail(transitionId, position)
-            val extras = FragmentNavigatorExtras(
-                imageView to transitionId
-            )
-            findNavController().navigate(direction, extras)
+    private val mAdapterSelectionCallback: ((position: Int) -> Unit) =
+        let@{
+            findNavController().navigate(ImagesListFragmentDirections.moveToImageDetail(it))
         }
 
     override fun showProgress(msg: String?) {

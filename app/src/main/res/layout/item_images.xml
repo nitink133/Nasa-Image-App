@@ -30,7 +30,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/iv_thumbnail"
             app:layout_constraintBottom_toBottomOf="@id/iv_thumbnail"
-            android:layout_height="@dimen/small_icon_size"
+            android:layout_height="@dimen/extra_large_icon_size"
             android:layout_gravity="center" />
 
         <androidx.appcompat.widget.AppCompatTextView

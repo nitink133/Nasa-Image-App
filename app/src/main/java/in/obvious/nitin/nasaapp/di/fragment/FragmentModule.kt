@@ -1,6 +1,7 @@
 package `in`.obvious.nitin.nasaapp.di.fragment
 
 import `in`.obvious.nitin.nasaapp.di.quantifier.FragmentViewModelFactory
+import `in`.obvious.nitin.nasaapp.ui.images.fragment.ImageDetailFragmentArgs
 import `in`.obvious.nitin.nasaapp.utils.functional.MyViewModelFactory
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -18,4 +19,9 @@ object FragmentModule {
     @FragmentScoped
     @FragmentViewModelFactory
     fun viewModelFactory(factory: MyViewModelFactory): ViewModelProvider.Factory = factory
+
+    @Provides
+    @FragmentScoped
+    fun argumentsImageDetailsFragment(fragment: Fragment) =
+        ImageDetailFragmentArgs.fromBundle(fragment.requireArguments())
 }

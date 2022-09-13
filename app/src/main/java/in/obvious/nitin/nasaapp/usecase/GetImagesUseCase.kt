@@ -10,7 +10,10 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import javax.inject.Inject
 
-
+/**
+ * @author Nitin Khanna
+ * @date 13/09/2022
+ */
 interface GetImagesUseCase {
     suspend fun getImages(): List<NasaImage>
 }

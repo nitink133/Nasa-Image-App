@@ -16,7 +16,7 @@ import coil.ImageLoader
  * @date 13/09/2022
  */
 class ImageListAdapter(
-    private val onClick: ((imageView: View, position: Int, transitionId: String) -> Unit),
+    private val onClick: ((position: Int) -> Unit),
 ) : ListAdapter<NasaImage, ImageListViewHolder>(object : DiffUtil.ItemCallback<NasaImage>() {
 
     override fun areItemsTheSame(oldItem: NasaImage, newItem: NasaImage): Boolean {
@@ -27,7 +27,6 @@ class ImageListAdapter(
     override fun areContentsTheSame(oldItem: NasaImage, newItem: NasaImage): Boolean {
         return oldItem == newItem
     }
-
 }) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ImageListViewHolder {

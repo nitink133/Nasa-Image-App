@@ -1,6 +1,8 @@
 package `in`.obvious.nitin.nasaapp.di.fragment
 
 import `in`.obvious.nitin.nasaapp.di.quantifier.ViewModelKey
+import `in`.obvious.nitin.nasaapp.ui.images.viewmodel.ImageDetailsViewModel
+import `in`.obvious.nitin.nasaapp.ui.images.viewmodel.ImageDetailsViewModelImpl
 import `in`.obvious.nitin.nasaapp.ui.images.viewmodel.ImageListViewModel
 import `in`.obvious.nitin.nasaapp.ui.images.viewmodel.ImageListViewModelImpl
 import androidx.lifecycle.ViewModel
@@ -18,4 +20,9 @@ internal interface ViewModelModule {
     @IntoMap
     @ViewModelKey(ImageListViewModel::class)
     fun bindImageListViewModel(viewModel: ImageListViewModelImpl): ViewModel
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(ImageDetailsViewModel::class)
+    fun bindImageDetailsViewModel(viewModel: ImageDetailsViewModelImpl): ViewModel
 }

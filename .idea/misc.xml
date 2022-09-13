@@ -4,10 +4,19 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/background_button_disabled.xml" value="0.11" />
+        <entry key="app/src/main/res/drawable/ic_arrow_back.xml" value="0.125" />
+        <entry key="app/src/main/res/drawable/ic_arrow_back_circle.xml" value="0.186" />
+        <entry key="app/src/main/res/drawable/ic_arrow_next.xml" value="0.186" />
+        <entry key="app/src/main/res/drawable/ic_arrow_next_circle.xml" value="0.186" />
+        <entry key="app/src/main/res/drawable/ic_chevron_left.xml" value="0.186" />
+        <entry key="app/src/main/res/drawable/ic_chevron_right.xml" value="0.186" />
         <entry key="app/src/main/res/drawable/ic_image_error.xml" value="0.186" />
+        <entry key="app/src/main/res/drawable/item_image_details.xml" value="0.186" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.23802083333333332" />
         <entry key="app/src/main/res/layout/fragment_base.xml" value="0.23802083333333332" />
+        <entry key="app/src/main/res/layout/fragment_image_detail.xml" value="0.23802083333333332" />
         <entry key="app/src/main/res/layout/fragment_images_list.xml" value="0.23802083333333332" />
+        <entry key="app/src/main/res/layout/item_image_details.xml" value="0.23697916666666666" />
         <entry key="app/src/main/res/layout/item_images.xml" value="0.23802083333333332" />
         <entry key="app/src/main/res/layout/item_picture.xml" value="0.23802083333333332" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.186" />

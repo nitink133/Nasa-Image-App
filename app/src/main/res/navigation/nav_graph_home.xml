@@ -28,9 +28,6 @@
             app:argType="integer"
             android:defaultValue="0" />
 
-        <argument
-            android:name="transitionId"
-            app:argType="string" />
     </fragment>
 
 </navigation>

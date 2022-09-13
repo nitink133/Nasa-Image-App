@@ -1,10 +1,10 @@
 package `in`.obvious.nitin.nasaapp.ui.images.adapter.viewholder
 
-import `in`.obvious.nitin.nasaapp.databinding.ItemImagesBinding
+import `in`.obvious.nitin.nasaapp.databinding.ItemImageDetailsBinding
 import `in`.obvious.nitin.nasaapp.model.ui.NasaImage
 import `in`.obvious.nitin.nasaapp.utils.functional.AnimationUtils
-import android.view.View
 import androidx.core.view.ViewCompat
+import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 
@@ -12,14 +12,15 @@ import coil.load
  * @author Nitin Khanna
  * @date 13/09/2022
  */
-class ImageListViewHolder(
-    private val binding: ItemImagesBinding,
-    private val onClick: ((position: Int) -> Unit),
+class ImageDetailPagerViewHolder(
+    private val binding: ItemImageDetailsBinding,
 ) : RecyclerView.ViewHolder(binding.root) {
     fun bind(item: NasaImage) = with(binding) {
         tvTitle.text = item.title
+        tvDate.text = item.date
+        tvExplanation.text = item.explanation
         AnimationUtils.showView(progressBar)
-        ivThumbnail.load(item.url) {
+        ivLogo.load(item.url) {
             listener(
                 onError = { _, _ ->
                     AnimationUtils.hideView(progressBar)
@@ -29,8 +30,7 @@ class ImageListViewHolder(
                 }
             )
         }
-        root.setOnClickListener {
-            onClick.invoke(adapterPosition)
-        }
+        tvCopyright.text = item.copyright
+        lblCopyright.isVisible = item.copyright != null
     }
 }

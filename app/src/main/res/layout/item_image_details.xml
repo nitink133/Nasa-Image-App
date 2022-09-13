@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:minHeight="300dp"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@style/PrimaryProgressBar"
+            android:layout_width="@dimen/extra_large_icon_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_logo"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/iv_logo"
+            android:layout_height="@dimen/extra_large_icon_size"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/lbl_title"
+            style="@style/MediumText.Large"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:text="@string/lbl_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_logo" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/RegularText.Medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/lbl_title"
+            app:layout_constraintStart_toStartOf="@id/lbl_title"
+            app:layout_constraintTop_toBottomOf="@id/lbl_title"
+            tools:text="@string/dummy_regular_text" />
+
+        <TextView
+            android:id="@+id/lbl_date"
+            style="@style/MediumText.Large"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:text="@string/lbl_date"
+            app:layout_constraintEnd_toEndOf="@id/tv_title"
+            app:layout_constraintStart_toStartOf="@id/tv_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            style="@style/RegularText.Medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/lbl_date"
+            app:layout_constraintStart_toStartOf="@id/lbl_date"
+            app:layout_constraintTop_toBottomOf="@id/lbl_date"
+            tools:text="@string/dummy_small_text" />
+
+        <TextView
+            android:id="@+id/lbl_explanation"
+            style="@style/MediumText.Large"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:text="@string/lbl_explanation"
+            app:layout_constraintEnd_toEndOf="@id/tv_date"
+            app:layout_constraintStart_toStartOf="@id/tv_date"
+            app:layout_constraintTop_toBottomOf="@id/tv_date" />
+
+        <TextView
+            android:id="@+id/tv_explanation"
+            style="@style/RegularText.Medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/lbl_copyright"
+            app:layout_constraintEnd_toEndOf="@id/lbl_explanation"
+            app:layout_constraintStart_toStartOf="@id/lbl_explanation"
+            app:layout_constraintTop_toBottomOf="@id/lbl_explanation"
+            tools:text="@string/dummy_large_text" />
+
+        <TextView
+            android:id="@+id/lbl_copyright"
+            style="@style/MediumText.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/lbl_copyright"
+            app:layout_constraintStart_toStartOf="@id/tv_explanation"
+            app:layout_constraintTop_toBottomOf="@id/tv_explanation"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_copyright"
+            style="@style/RegularText.Medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/lbl_copyright"
+            android:layout_marginStart="@dimen/margin_small"
+            app:layout_constraintEnd_toEndOf="@+id/tv_explanation"
+            app:layout_constraintStart_toEndOf="@+id/lbl_copyright"
+            app:layout_constraintTop_toTopOf="@+id/lbl_copyright"
+            tools:text="@string/dummy_small_text" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
