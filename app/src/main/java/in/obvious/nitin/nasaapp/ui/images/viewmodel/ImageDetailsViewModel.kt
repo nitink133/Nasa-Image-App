@@ -2,7 +2,6 @@ package `in`.obvious.nitin.nasaapp.ui.images.viewmodel
 
 import `in`.obvious.nitin.nasaapp.base.viewmodel.BaseViewModel
 import `in`.obvious.nitin.nasaapp.model.ui.NasaImage
-import `in`.obvious.nitin.nasaapp.ui.images.fragment.ImageDetailFragmentArgs
 import `in`.obvious.nitin.nasaapp.usecase.GetImagesUseCase
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

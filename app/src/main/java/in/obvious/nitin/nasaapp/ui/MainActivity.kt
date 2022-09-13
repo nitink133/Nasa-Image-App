@@ -2,7 +2,6 @@ package `in`.obvious.nitin.nasaapp.ui
 
 import `in`.obvious.nitin.nasaapp.R
 import `in`.obvious.nitin.nasaapp.base.activity.BaseActivity
-import `in`.obvious.nitin.nasaapp.base.fragment.BaseFragment
 import `in`.obvious.nitin.nasaapp.databinding.ActivityMainBinding
 import `in`.obvious.nitin.nasaapp.ui.images.fragment.ImagesListFragment
 import `in`.obvious.nitin.nasaapp.utils.functional.ToastUtils

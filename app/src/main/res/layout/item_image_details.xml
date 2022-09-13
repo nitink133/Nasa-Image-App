@@ -24,13 +24,13 @@
             android:id="@+id/progress_bar"
             style="@style/PrimaryProgressBar"
             android:layout_width="@dimen/extra_large_icon_size"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/iv_logo"
+            android:layout_height="@dimen/extra_large_icon_size"
+            android:layout_gravity="center"
             android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="@id/iv_logo"
-            android:layout_height="@dimen/extra_large_icon_size"
-            android:layout_gravity="center" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_logo" />
 
         <TextView
             android:id="@+id/lbl_title"
@@ -106,17 +106,17 @@
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
             android:text="@string/lbl_copyright"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@id/tv_explanation"
-            app:layout_constraintTop_toBottomOf="@id/tv_explanation"
-            app:layout_constraintBottom_toBottomOf="parent" />
+            app:layout_constraintTop_toBottomOf="@id/tv_explanation" />
 
         <TextView
             android:id="@+id/tv_copyright"
             style="@style/RegularText.Medium"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="@+id/lbl_copyright"
             android:layout_marginStart="@dimen/margin_small"
+            app:layout_constraintBottom_toBottomOf="@+id/lbl_copyright"
             app:layout_constraintEnd_toEndOf="@+id/tv_explanation"
             app:layout_constraintStart_toEndOf="@+id/lbl_copyright"
             app:layout_constraintTop_toTopOf="@+id/lbl_copyright"

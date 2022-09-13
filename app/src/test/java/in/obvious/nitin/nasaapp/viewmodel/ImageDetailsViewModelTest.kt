@@ -2,8 +2,6 @@ package `in`.obvious.nitin.nasaapp.viewmodel
 
 import `in`.obvious.nitin.nasaapp.ui.images.viewmodel.ImageDetailsViewModel
 import `in`.obvious.nitin.nasaapp.ui.images.viewmodel.ImageDetailsViewModelImpl
-import `in`.obvious.nitin.nasaapp.ui.images.viewmodel.ImageListViewModel
-import `in`.obvious.nitin.nasaapp.ui.images.viewmodel.ImageListViewModelImpl
 import `in`.obvious.nitin.nasaapp.usecase.GetImagesUseCase
 import `in`.obvious.nitin.nasaapp.utils.getOrAwaitValue
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule

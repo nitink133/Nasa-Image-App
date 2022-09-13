@@ -5,11 +5,9 @@ import `in`.obvious.nitin.nasaapp.databinding.ItemImagesBinding
 import `in`.obvious.nitin.nasaapp.model.ui.NasaImage
 import `in`.obvious.nitin.nasaapp.ui.images.adapter.viewholder.ImageListViewHolder
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
-import coil.ImageLoader
 
 /**
  * @author Nitin Khanna

@@ -4,16 +4,10 @@ import `in`.obvious.nitin.nasaapp.R
 import `in`.obvious.nitin.nasaapp.databinding.ItemImageDetailsBinding
 import `in`.obvious.nitin.nasaapp.model.ui.NasaImage
 import `in`.obvious.nitin.nasaapp.ui.images.adapter.viewholder.ImageDetailPagerViewHolder
-import `in`.obvious.nitin.nasaapp.utils.functional.AnimationUtils
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.core.view.ViewCompat
-import androidx.core.view.isVisible
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
-import androidx.recyclerview.widget.RecyclerView
-import coil.ImageLoader
-import coil.load
 
 /**
  * @author Nitin Khanna

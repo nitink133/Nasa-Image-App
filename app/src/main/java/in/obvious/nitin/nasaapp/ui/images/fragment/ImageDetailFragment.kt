@@ -1,24 +1,17 @@
 package `in`.obvious.nitin.nasaapp.ui.images.fragment
 
-import `in`.obvious.nitin.nasaapp.R
 import `in`.obvious.nitin.nasaapp.base.fragment.BaseFragment
 import `in`.obvious.nitin.nasaapp.databinding.FragmentImageDetailBinding
-import `in`.obvious.nitin.nasaapp.databinding.FragmentImagesListBinding
 import `in`.obvious.nitin.nasaapp.ui.images.adapter.ImageDetailsPagerAdapter
 import `in`.obvious.nitin.nasaapp.ui.images.viewmodel.ImageDetailsViewModel
-import `in`.obvious.nitin.nasaapp.ui.images.viewmodel.ImageListViewModel
 import `in`.obvious.nitin.nasaapp.utils.extentions.subscribe
 import `in`.obvious.nitin.nasaapp.utils.functional.ZoomOutPageTransformer
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.isVisible
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.viewpager2.widget.ViewPager2
-
-import coil.ImageLoader
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 

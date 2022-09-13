@@ -26,12 +26,12 @@
             android:id="@+id/progress_bar"
             style="@style/PrimaryProgressBar"
             android:layout_width="@dimen/extra_large_icon_size"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/iv_thumbnail"
-            app:layout_constraintBottom_toBottomOf="@id/iv_thumbnail"
             android:layout_height="@dimen/extra_large_icon_size"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toBottomOf="@id/iv_thumbnail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_thumbnail" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_title"

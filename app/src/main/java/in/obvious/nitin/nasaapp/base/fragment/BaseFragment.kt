@@ -21,7 +21,6 @@ import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
-import java.lang.Exception
 import java.lang.reflect.ParameterizedType
 import javax.inject.Inject
 import kotlin.reflect.KClass

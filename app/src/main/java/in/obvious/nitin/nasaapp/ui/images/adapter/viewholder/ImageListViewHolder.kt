@@ -3,8 +3,6 @@ package `in`.obvious.nitin.nasaapp.ui.images.adapter.viewholder
 import `in`.obvious.nitin.nasaapp.databinding.ItemImagesBinding
 import `in`.obvious.nitin.nasaapp.model.ui.NasaImage
 import `in`.obvious.nitin.nasaapp.utils.functional.AnimationUtils
-import android.view.View
-import androidx.core.view.ViewCompat
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 

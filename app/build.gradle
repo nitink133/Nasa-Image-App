@@ -50,7 +50,7 @@ android {
     }
 
     testOptions {
-        unitTests.includeAndroidResources  = true
+        unitTests.includeAndroidResources = true
         unitTests.returnDefaultValues = true
     }
 

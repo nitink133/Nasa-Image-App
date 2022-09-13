@@ -3,7 +3,6 @@ package `in`.obvious.nitin.nasaapp
 import `in`.obvious.nitin.nasaapp.base.activity.BaseActivity
 import `in`.obvious.nitin.nasaapp.databinding.ActivityMainTestBinding
 import android.os.Bundle
-import android.view.LayoutInflater
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

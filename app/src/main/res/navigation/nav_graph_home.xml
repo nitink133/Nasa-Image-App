@@ -25,8 +25,8 @@
 
         <argument
             android:name="position"
-            app:argType="integer"
-            android:defaultValue="0" />
+            android:defaultValue="0"
+            app:argType="integer" />
 
     </fragment>
 
