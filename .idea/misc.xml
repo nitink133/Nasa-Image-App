@@ -4,7 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/background_button_disabled.xml" value="0.11" />
+        <entry key="app/src/main/res/drawable/ic_image_error.xml" value="0.186" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.23802083333333332" />
+        <entry key="app/src/main/res/layout/fragment_base.xml" value="0.23802083333333332" />
+        <entry key="app/src/main/res/layout/fragment_images_list.xml" value="0.23802083333333332" />
+        <entry key="app/src/main/res/layout/item_images.xml" value="0.23802083333333332" />
+        <entry key="app/src/main/res/layout/item_picture.xml" value="0.23802083333333332" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.186" />
       </map>
     </option>

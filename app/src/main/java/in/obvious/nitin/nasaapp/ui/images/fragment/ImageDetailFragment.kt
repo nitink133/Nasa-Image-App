@@ -7,6 +7,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
+import coil.ImageLoader
+
+/**
+ * @author Nitin Khanna
+ * @date 13/09/2022
+ */
 class ImageDetailFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -15,5 +21,4 @@ class ImageDetailFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_image_detail, container, false)
     }
-
 }

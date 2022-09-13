@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="in.obvious.nitin.nasaapp">
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:name=".AppController"
         android:allowBackup="true"

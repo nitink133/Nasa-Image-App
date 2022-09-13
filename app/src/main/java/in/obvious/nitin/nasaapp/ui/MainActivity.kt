@@ -10,6 +10,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.MenuItem
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.NavHostFragment
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -29,8 +30,6 @@ class MainActivity : BaseActivity() {
 
     override fun onBackPressed() {
         val fragment = getVisibleFragment()
-        val doBack = fragment?.onBackPressed() ?: false
-        if (!doBack) return
         if (supportFragmentManager.backStackEntryCount > 0 || fragment !is ImagesListFragment) {
             super.onBackPressed()
         } else if (!doubleBackToExitPressedOnce) {
@@ -44,11 +43,11 @@ class MainActivity : BaseActivity() {
     }
 
 
-    private fun getVisibleFragment(): BaseFragment? {
+    private fun getVisibleFragment(): Fragment? {
         val navHostFragment: NavHostFragment? =
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment?
         if (navHostFragment?.childFragmentManager?.fragments.isNullOrEmpty()) return null
-        return navHostFragment?.childFragmentManager?.fragments!![0] as? BaseFragment
+        return navHostFragment?.childFragmentManager?.fragments!![0]
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
