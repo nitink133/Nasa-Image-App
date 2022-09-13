@@ -2,6 +2,7 @@ package `in`.obvious.nitin.nasaapp.utils
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
+import kotlinx.coroutines.runBlocking
 import java.util.concurrent.CountDownLatch
 import java.util.concurrent.TimeUnit
 import java.util.concurrent.TimeoutException
@@ -29,4 +30,8 @@ fun <T> LiveData<T>.getOrAwaitValue(
 
     @Suppress("UNCHECKED_CAST")
     return data as? T
+}
+
+fun runBlockingTest(func: suspend () -> Unit): Unit = runBlocking {
+    func.invoke()
 }

@@ -1,4 +1,4 @@
-package `in`.obvious.nitin.nasaapp
+package `in`.obvious.nitin.nasaapp.base
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

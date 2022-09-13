@@ -13,6 +13,7 @@
         <entry key="app/src/main/res/drawable/ic_image_error.xml" value="0.186" />
         <entry key="app/src/main/res/drawable/item_image_details.xml" value="0.186" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.23802083333333332" />
+        <entry key="app/src/main/res/layout/activity_main_test.xml" value="0.23802083333333332" />
         <entry key="app/src/main/res/layout/fragment_base.xml" value="0.23802083333333332" />
         <entry key="app/src/main/res/layout/fragment_image_detail.xml" value="0.23802083333333332" />
         <entry key="app/src/main/res/layout/fragment_images_list.xml" value="0.23802083333333332" />

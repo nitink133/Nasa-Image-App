@@ -8,8 +8,8 @@ buildscript {
         coil_version = '1.4.0'
 
         //Android system libraries
-        arch_version = '2.4.0'
-        nav_version = "2.4.1"
+        arch_version = '2.5.1'
+        nav_version = "2.5.2"
 
         //System configurations
         kotlin_version = "1.6.10"
